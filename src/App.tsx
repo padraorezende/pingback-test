@@ -1,12 +1,15 @@
 import React from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
+import { Home } from './components/Home/Home';
 import { QuestionsPageContainer } from './components/Questions/QuestionsContainer';
 
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <QuestionsPageContainer/>
-    </div>
+    <BrowserRouter>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/questions" component={QuestionsPageContainer} />
+    </BrowserRouter>
   );
 }
 

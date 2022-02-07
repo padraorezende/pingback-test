@@ -12,3 +12,4 @@ export type Questions = {
     response_code?: number,
     results?: QuestionsResult[]
 }
+
