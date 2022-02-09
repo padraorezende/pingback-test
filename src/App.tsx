@@ -1,19 +1,17 @@
-import React from 'react';
-import { Provider } from 'react-redux';
-import { BrowserRouter, Route } from 'react-router-dom';
-import { Home } from './components/presentation/Home';
-import { Questions } from './components/presentation/Questions';
-import { store } from './redux/store';
+import React from "react";
+import { Provider } from "react-redux";
+import { BrowserRouter } from "react-router-dom";
+import { store } from "./redux/store";
+import { AppRoutes } from "./routes";
 
 const App = () => {
   return (
     <Provider store={store}>
       <BrowserRouter>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/questions" component={Questions} />
-      </BrowserRouter> 
+        <AppRoutes />
+      </BrowserRouter>
     </Provider>
   );
-}
+};
 
 export default App;

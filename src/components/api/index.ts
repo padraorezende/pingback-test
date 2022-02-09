@@ -1,4 +1,4 @@
-import { api } from "../../../../api/api"
+import { api } from "../../api/api"
 
 export const loadQuestions = async (token: string) => {
     return api.get("/api.php", {params: {
