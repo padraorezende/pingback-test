@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="PingBack Test" src="https://pingback.com/favicon.ico" width="60px">
+  <img alt="PingBack Test" src="https://pingback.com/favicon.ico" width="30px">
 </p>
 
 
